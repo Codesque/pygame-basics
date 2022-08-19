@@ -1,0 +1,15 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Bahattin Yüksel\vscode> python -m pip3 install pygame
+C:\Users\Bahattin Yüksel\AppData\Local\Programs\Python\Python310\python.exe: No module named pip3
+PS C:\Users\Bahattin Yüksel\vscode> python -m pip install pygame
+Collecting pygame
+  Downloading pygame-2.1.2-cp310-cp310-win_amd64.whl (8.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.4/8.4 MB 2.8 MB/s eta 0:00:00
+Installing collected packages: pygame
+Successfully installed pygame-2.1.2
+WARNING: There was an error checking the latest version of pip.
+PS C:\Users\Bahattin Yüksel\vscode> 

@@ -1,0 +1,15 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Bahattin Yüksel\vscode> python
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pygame
+pygame 2.1.2 (SDL 2.0.18, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+>>> pygame.init()
+(5, 0)
+>>> pygame.get_init()
+True
