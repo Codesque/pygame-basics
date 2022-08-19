@@ -35,10 +35,9 @@ class pyPaintDemo :
 
 
             for position in self.circle_positions: 
-                try:
+                
                     pygame.draw.circle(self.window , self.color ,position , self.circle_radius) 
-                except: 
-                    print("Hello")
+                
 
 
             pygame.display.update() 
