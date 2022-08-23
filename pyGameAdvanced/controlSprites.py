@@ -3,9 +3,9 @@ import random
 
 
 COLOR = (255,80,0) 
-SURFACE_COLOR = (255,255,255) 
-WIDTH = 900 
-HEIGHT = 600
+SURFACE_COLOR = (255,255,255) # background color
+WIDTH = 900 # window width
+HEIGHT = 600 # window height
 
 class Sprite(pygame.sprite.Sprite): 
 
