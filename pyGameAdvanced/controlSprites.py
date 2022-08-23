@@ -80,12 +80,6 @@ if __name__ == "__main__" :
         if keys[pygame.K_RIGHT] or keys[pygame.K_d]: 
             player.moveRight(10) 
 
-
-
-
-            
-
-        
         all_sprite_list.update() 
         window.fill(SURFACE_COLOR) 
         all_sprite_list.draw(window) 
