@@ -1,5 +1,6 @@
 import pygame 
-import random 
+import random  
+from multipledispatch import dispatch
 
 class SaveTheCat : 
  
@@ -138,7 +139,7 @@ class SaveTheCat :
                 # Player and it's pixel border is on the right of the stone and (player + border) is on the left of the (stone + border) 
                 stone.y = self.height + 1000  # ????? 
 
-
+    @dispatch(Player)
     def applyBorders(self , player : Player):  
 
         if player.x >= self.width - self.pixel : 
@@ -147,6 +148,7 @@ class SaveTheCat :
         if player.x <= 0 : 
             player.x = 0  
 
+    @dispatch(Stone)
     def applyBorders(self , stone : Stone) : 
 
         if stone.y > self.height and stone.y < self.height + 200 : 
@@ -158,14 +160,15 @@ class SaveTheCat :
     def applyEvents(self): 
         
         
-        self.applyBorders(self.player1) 
-        self.applyBorders(self.stone1) 
+
         self.applyJump(self.player1)
         
         self.player1.x += self.player1.delta_x 
         self.player1.y += self.player1.delta_y  
 
-        self.stone1.y += self.stone1.delta_y
+        self.stone1.y += self.stone1.delta_y 
+        self.applyBorders(self.player1) 
+        self.applyBorders(self.stone1) 
         
         self.player1.show(self.window)  
         self.stone1.show(self.window)   
