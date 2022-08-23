@@ -69,7 +69,7 @@ class jumpingObject :
                 self.char_m = self.char_neg_m 
                 # This makes Fnet negative . Because of that object will go down 
                 # When v>0 , object is going up about X meters 
-                # When v<0 , object is going down about X meters because negative velocity and positive velocity is symetric
+                # When v<0 , object is going down about X meters because negative velocity and positive velocity are symetric
 
             if self.char_v == ( self.char_neg_v - 1  ): 
                 self.char_isJump = False 
